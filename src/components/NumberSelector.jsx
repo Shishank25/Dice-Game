@@ -55,12 +55,16 @@ const NumberSelector = ({error, setError, selectedNumber, setSelectedNumber}) =>
     width: 4.5rem;
     height: 4.5rem;
     border: 1px solid black;
+    border-radius: 10%;
     font-weight: bold;
     font-size: 1.5rem;
     background-color: ${(props)=> props.isSelected ? "black" : "white"};
     color: ${(props)=> props.isSelected ? "white" : "black"};
+    transition: 0.3s background-color ease-in-out;
 
     &:hover{
         cursor: pointer;
+        background-color: lightgray;
+        transition: 0.3s background-color ease-in-out;
     }
 `
